@@ -11210,3 +11210,9 @@ footer a:hover, footer a:active, footer a:focus {
         right: 0;
     }
 }
+
+
+#mainNav {
+    max-height: 72px;
+    overflow: hidden;
+}
