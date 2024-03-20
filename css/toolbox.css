@@ -1,0 +1,127 @@
+:root {
+    --toolbox-title: var(--bs-green);
+    --toolbox-alt: var(--bs-indigo);
+}
+
+.toolbox {
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    max-width: 50%;
+    z-index: 999999;
+}
+
+.toolbox .h1, 
+.toolbox .h2,
+.toolbox .h3,
+.toolbox .h4,
+.toolbox .h5,
+.toolbox .h6
+{
+    font-family: sans-serif;
+}
+
+.toolbox .card-body {
+    display: none;
+}
+
+.toolbox--open .card-body {
+    display: block;
+}
+
+.toolbox .card-header {
+    padding: 0;
+    border: none;
+}
+
+.toolbox--open .card-header {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+.toolbox .text-highlight {
+    padding: 5px;
+}
+
+.toolbox .text-highlight--red {
+    color: white;
+    background: var(--toolbox-title);
+}
+
+.toolbox .text-highlight--teal {
+    color: white;
+    background: var( --toolbox-alt);
+}
+
+/**** TITLES ****/
+
+.toolboox--title-level h1,
+.toolboox--title-level h2,
+.toolboox--title-level h3,
+.toolboox--title-level h4,
+.toolboox--title-level h5,
+.toolboox--title-level h6
+{
+    border: 5px solid var(--toolbox-title) !important;
+    position: relative;
+    font-weight: normal;
+}
+
+.toolboox--title-level h1:before,
+.toolboox--title-level h2:before,
+.toolboox--title-level h3:before,
+.toolboox--title-level h4:before,
+.toolboox--title-level h5:before,
+.toolboox--title-level h6:before 
+{
+    position: absolute;
+    background: var(--toolbox-title);
+    color: white;
+    font-size: 15px;
+    height: 25px;
+    left: -5px;
+    top: -25px;
+    padding: 5px 10px;
+    font-family: sans-serif;
+}
+
+.toolboox--title-level h1:before {
+    content: 'Titre de niveau 1';
+}
+
+.toolboox--title-level h2:before {
+    content: 'Titre de niveau 2';
+}
+
+.toolboox--title-level h3:before {
+    content: 'Titre de niveau 3';
+}
+
+.toolboox--title-level h4:before {
+    content: 'Titre de niveau 4';
+}
+
+.toolboox--title-level h5:before {
+    content: 'Titre de niveau 5';
+}
+
+.toolboox--title-level h6:before {
+    content: 'Titre de niveau 6';
+}
+
+/**** ALTERNATIVE TEXT ****/
+
+.toolboox--alt-images img {
+    border: 5px solid var(--toolbox-alt);
+}
+
+.toolbox--alt {
+    background: var(--toolbox-alt);
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+}
