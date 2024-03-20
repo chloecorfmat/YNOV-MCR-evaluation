@@ -11191,9 +11191,12 @@ footer a:hover, footer a:active, footer a:focus {
 
 .img-pricing {
     position: absolute;
-    width: 200px;
     bottom: -80%;
     right: 0;
+}
+
+.img-pricing img {
+    width: 200px;
 }
 
 #submitErrorMessage ul {
